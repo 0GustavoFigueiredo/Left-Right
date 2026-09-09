@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Left/Right</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=1d900f97">
+</head>
+<body>
+
+  <div class="crt-overlay" aria-hidden="true"></div>
+
+  <main class="game-wrap">
+    <header class="game-header">
+      <h1 class="glitch-title">LEFT/RIGHT</h1>
+      <p class="tagline">O vulcão despertou. Desvie das pedras e das brasas indo para os lados, e escape antes que a lava alcance você.</p>
+    </header>
+
+    <section class="hud">
+      <div class="hud-item">
+        <span class="hud-label">DISTÂNCIA</span>
+        <span class="hud-value" id="distance">0m</span>
+      </div>
+      <div class="hud-item">
+        <span class="hud-label">META</span>
+        <span class="hud-value" id="target">400m</span>
+      </div>
+      <div class="hud-item">
+        <span class="hud-label">RECORDE</span>
+        <span class="hud-value" id="best">0m</span>
+      </div>
+    </section>
+
+    <div class="board-frame">
+      <canvas id="board" width="600" height="460"></canvas>
+
+      <div class="overlay menu-overlay" id="menu-overlay">
+        <div class="overlay-card">
+          <h2 class="overlay-title-flicker">LEFT/RIGHT</h2>
+          <p class="menu-sub">Selecione a dificuldade e toque em iniciar</p>
+
+          <div class="difficulty-select" id="difficulty-select">
+            <button class="diff-btn" data-difficulty="facil">FÁCIL</button>
+            <button class="diff-btn is-active" data-difficulty="medio">MÉDIO</button>
+            <button class="diff-btn" data-difficulty="dificil">DIFÍCIL</button>
+          </div>
+
+          <button id="menu-start-btn" class="arcade-btn">INICIAR JOGO</button>
+          <p class="menu-hint">Setas ← → / A D / arraste o dedo na tela para desviar dos obstáculos.</p>
+        </div>
+      </div>
+
+      <div class="overlay hidden" id="overlay">
+        <div class="overlay-card">
+          <h2 id="overlay-title">O vulcão vai explodir!</h2>
+          <p id="overlay-text">
+            Use as setas <strong>← →</strong>, as teclas <strong>A D</strong> ou arraste o dedo na tela para desviar.
+            Evite pedras e brasas e percorra a distância da meta para escapar com vida.
+          </p>
+          <button id="overlay-btn" class="arcade-btn">TENTAR NOVAMENTE</button>
+          <button id="overlay-menu-btn" class="arcade-btn arcade-btn--ghost">MUDAR DIFICULDADE</button>
+        </div>
+      </div>
+    </div>
+
+    <p class="hint">Setas ← → / A D / arraste na tela para desviar. Toque também reinicia a partida.</p>
+  </main>
+
+  <script src="script.js?v=3d0c6fbd"></script>
+</body>
+</html>
