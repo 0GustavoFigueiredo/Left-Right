@@ -51,9 +51,7 @@ Depois, abra `index.html` no navegador (duplo clique ou "Abrir com").
 
 ## Link da versão publicada (GitHub Pages)
 
-`https://<seu-usuario>.github.io/<seu-repositorio>/`
-
-> Substitua pelo link real após publicar no GitHub Pages.
+`https://0gustavofigueiredo.github.io/Left-Right/`
 
 ## Informações do projeto
 
@@ -61,7 +59,7 @@ Depois, abra `index.html` no navegador (duplo clique ou "Abrir com").
 {
   "nome": "Left/Right",
   "descricao": "Jogo de esquiva em que o jogador se move para os lados a fim de fugir de pedras e brasas de um vulcão em erupção, com dificuldade crescente, até percorrer a distância da meta e escapar.",
-  "autores": "Gustavo",
+  "autores": "Gustavo Figueiredo",
   "turma": "14A"
 }
 ```
